@@ -1,0 +1,21 @@
+// Simple Perceptron Example
+// See: http://en.wikipedia.org/wiki/Perceptron
+
+// Code based on text "Artificial Intelligence", George Luger
+
+// A list of points we will use to "train" the perceptron
+let training = new Array(2000);
+// A perceptron object
+let ptron;
+
+// We will train the perceptron with one "Point" object at a time
+let count = 0;
+
+// Coordinate space
+let xmin = -1;
+let ymin = -1;
+let xmax = 1;
+let ymax = 1;
+
+// The function to describe a line
+function f(x) {
