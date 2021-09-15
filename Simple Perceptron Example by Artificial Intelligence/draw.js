@@ -52,7 +52,7 @@ function draw() {
     let x1 = map(xmin, xmin, xmax, 0, width);
     let y1 = map(f(xmin), ymin, ymax, height, 0);
     let x2 = map(xmax, xmin, xmax, 0, width);
-    let y2 = map(f(xmax), ymin, ymax, geight, 0);
+    let y2 = map(f(xmax), ymin, ymax, height, 0);
     line(x1, y1, x2, y2);
     
     // Draw the line based on the current weights
